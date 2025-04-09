@@ -1,5 +1,5 @@
 {% set name = "MAPIT" %}
-{% set version = "1.4.97b0" %}
+{% set version = "1.5.0b0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/sandialabs/MAPIT/archive/{{ version }}.tar.gz
-  sha256: 1f0986ffdcb394d9a6dc043eb64d373f3ad1fc1f637c10f3faadbbace680e8ee
+  sha256: 58867341071d8e3cbf52cfe5e6c5ab843a5c4b4eace3e9b7f7969d9c4d70eb38
 
 build:
   entry_points:

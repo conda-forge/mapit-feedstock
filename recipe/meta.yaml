@@ -1,5 +1,5 @@
 {% set name = "MAPIT" %}
-{% set version = "1.5.0b0" %}
+{% set version = "1.5.10b0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/sandialabs/MAPIT/archive/{{ version }}.tar.gz
-  sha256: 58867341071d8e3cbf52cfe5e6c5ab843a5c4b4eace3e9b7f7969d9c4d70eb38
+  sha256: 6d2925f459d02f1880823ab7aa15f0e74e899713abda76eaadce743096de3775
 
 build:
   entry_points:
@@ -30,7 +30,8 @@ requirements:
     - tqdm
     - scipy
     - pyside6
-    - ray-default
+    - alive_bar
+    - yaspin
 
 test:
   imports:

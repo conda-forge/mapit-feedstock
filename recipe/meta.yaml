@@ -1,5 +1,5 @@
 {% set name = "MAPIT" %}
-{% set version = "1.5.12b0" %}
+{% set version = "1.5.13b0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/sandialabs/MAPIT/archive/{{ version }}.tar.gz
-  sha256: 0c04a90655f95aa126b84d8f20c783e95de585827d740890b2f4b4458bee356d
+  sha256: b12a026c0611beffa50c3c5a9ea7eb99bc0a94d2d7b0b8e331732b6df5c818f4
 
 build:
   entry_points:
@@ -25,13 +25,14 @@ requirements:
   run:
     - python >={{ python_min }}
     - matplotlib-base
-    - numpy
+    - numpy >= 2.0.0
     - pillow
     - tqdm
     - scipy
     - pyside6
     - alive-progress
     - yaspin
+    - platformdirs
 
 test:
   imports:
